@@ -99,7 +99,7 @@ class Ppdb_Online_Public {
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/ppdb-online-public.js', array( 'jquery' ), $this->version, false );
 
 	}
-
+//membuat function shortcode daftar-siswa
 	public function daftar_siswa_shortcode(){
 		$users = get_users(array('fields' => array('ID')));
 		$body = '';
